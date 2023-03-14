@@ -1,0 +1,965 @@
+@media only screen and (min-width: 1919px) {
+
+body {
+     margin: auto;
+     padding: 0;
+     background: #EAEAEA;
+     font-family: 'VCR_OSD_MONO';
+}
+
+/* Выранвивание по центру */
+.main {
+     max-width: 1385px;
+     margin: auto;
+}
+
+/* Верхние индикаторы */
+.container_top {
+     margin: 29px auto 0;
+     width: 1385px;
+     height: 98px;
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 0 2.344vw;
+     justify-content: center;
+}
+.square {
+     width: 98px;
+     height: 98px;
+     border-radius: 29%;
+     display: inline-block;
+     vertical-align: top;
+     position: relative;
+}
+
+/* Индикаторы разминирования */
+#one ,#two, #three, #four, #five, #six, #seven, #eight, #nine, #ten{
+     background-color: greenyellow;
+}
+
+/* Контейнер головоломок */
+.container_main {
+     margin-top: 29px;
+     width: 1385px;
+     height: 815px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2.240vw;
+     justify-content: center;
+     align-content: flex-start;
+}
+
+/* Основы головоломок */
+.block{
+     width: 242px;
+     height: 242px;
+     display: inline-block;
+     vertical-align: top;
+     position: relative;
+     background-color: #FF833D;
+     border-radius: 5.5px;
+     outline: 3px solid #8247FF;
+     outline-offset: -3px;
+}
+
+/* Экран и индикатор первой головоломки */
+.display_anagram{
+     margin: 28px 16px;
+     width: 205px;
+     height: 70px;
+     display: flex;
+     gap: 0 25px;
+     font-size: 16px;
+}
+.indicator_anagram {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+.display_anagram_right {
+     width: 157px;
+     height: 70px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.display_anagram_top{
+     width: 157px;
+     height: 30px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+}
+.display_anagram_bottom{
+     width: 157px;
+     height: 30px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+}
+
+/* Кнопки первой головоломки */
+.buttons_anagram {
+     margin: 28px 16px;
+     width: 205px;
+     height: 98px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 9px 9px;
+     font-size: 22px;
+}
+.button_anagram {
+     width: 44px;
+     height: 44px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+/* Алфавит */
+.display_alphabet{
+     margin: 28px 24px 0;
+     width: 205px;
+     height: 24px;
+     display: flex;
+     justify-content: flex-end;
+     gap: 0 25px;
+}
+.indicator_alphabet {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+
+.buttons_alphabet {
+     margin: 15px 28px;
+     width: 155px;
+     height: 155px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 7px 7px;
+     font-size: 22px;
+}
+
+.button_alphabet {
+     width: 74px;
+     height: 74px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 10px;
+}
+.button_alphabet_indicator{
+     width: 17px;
+     height: 4px;
+     margin-top: 5px;
+     border-radius: 5.5px;
+     background-color: greenyellow;
+}
+
+
+
+
+
+/* Шифр Цезаря */
+.display_caesar{
+     margin: 16px 18px 0;
+     width: 211px;
+     height: 52px;
+     display: flex;
+     justify-content: flex-end;
+     gap: 0 25px;
+     flex-direction: row-reverse;
+     align-items: center;
+}
+.indicator_caesar {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+.display_caesar_right{
+     width: 164px;
+     height: 52px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.buttons_caesar {
+     margin: 15px 32px;
+     width: 180px;
+     height: 132px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px 8px;
+     font-size: 22px;
+}
+.button_caesar{
+     width: 38px;
+     height: 38px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+
+
+/* Шахматы */
+.display_chess{
+     margin: 28px 23px 0;
+     width: 215px;
+     height: 84px;
+     display: flex;
+     justify-content: flex-end;
+     gap: 0px 32px;
+     flex-direction: row-reverse;
+     align-items: flex-start;
+}
+.indicator_chess {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+.display_chess_right{
+     width: 151px;
+     height: 70px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+.buttons_chess {
+     margin: 40px auto 0;
+     width: 214px;
+     height: 53px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 19px 19px;
+     font-size: 16px;
+}
+.button_chess{
+     width: 19px;
+     height: 19px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+.indicators_chess{
+     margin: 16px auto;
+     width: 205px;
+     height: 7px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0 32px;
+}
+.indicator_small_chess{
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 7px;
+     height: 7px;
+}
+
+
+
+.display_color{
+     margin: 28px 35px 0;
+     width: 195px;
+     height: 63px;
+     display: flex;
+     justify-content: flex-end;
+     gap: 0px 38px;
+     flex-direction: row-reverse;
+     align-items: flex-start;
+}
+.indicator_color {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+.display_color_right{
+     width: 133px;
+     height: 57px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: red;
+     justify-content: center;
+     align-items: center;
+     font-size: 16px;
+}
+
+
+.buttons_color {
+     margin: 12px auto 0;
+     width: 223px;
+     height: 108px;
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 0px 6px;
+     font-size: 22px;
+}
+.button_color{
+     width: 108px;
+     height: 108px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+.display_lock{
+     margin: 28px 47px 0;
+     width: 180px;
+     height: 148px;
+     display: flex;
+     justify-content: flex-end;
+     gap: 0px 8px;
+     flex-direction: row-reverse;
+     align-items: flex-start;
+}
+.indicator_lock {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+
+.display_lock_right{
+     width: 148px;
+     height: 148px;
+     display: flex;
+     border-radius: 100%;
+     background-color: #8247FF;
+     justify-content: center;
+     align-items: center;
+}
+.display_lock_right_center{
+     width: 80px;
+     height: 80px;
+     display: flex;
+     border-radius: 100%;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-size: 42px;
+}
+
+
+
+
+.buttons_lock {
+     margin: 12px auto 0;
+     width: 220px;
+     height: 35px;
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 0px 46px;
+}
+
+.buttons_lock_left {
+     margin: 0px auto 0px;
+     width: 82px;
+     height: 35px;
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 0px 10px;
+     font-size: 32px;
+}
+.button_lock{
+     width: 35px;
+     height: 35px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.button_lock_right{
+     width: 92px;
+     height: 35px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 16px;
+}
+
+
+
+
+.buttons_forget{
+     margin: 28px 8px 0;
+     width: 221px;
+     height: 140px;
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 0px 0;
+     font-size: 22px;
+}
+.buttons_forget_line{
+     margin: -20px auto 0;
+     width: 197px;
+     height: 153px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 7px 7px;
+     align-items: flex-end;
+}
+.button_forget{
+     width: 45px;
+     height: 45px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.display_forget {
+     width: 40px;
+     height: 40px;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.indicator_forget {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+
+
+
+
+.display_forget_right{
+     margin: auto;
+     width: 226px;
+     height: 64px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-size: 42px;
+}
+
+
+
+
+.display_keyboard{
+     margin: 28px 47px 0;
+     width: 180px;
+     height: 24px;
+     display: flex;
+     justify-content: flex-end;
+     gap: 0px 8px;
+     align-items: flex-start;
+}
+.indicator_keyboard {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+
+.buttons_keyboard {
+     margin: 12px 25px 0;
+     width: 157px;
+     height: 157px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 5px 5px;
+}
+.button_keyboard{
+     width: 76px;
+     height: 76px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     align-content: center;
+     flex-direction: column;
+}
+.button_keyboard_indicator{
+     width: 17px;
+     height: 4px;
+     border-radius: 5.5px;
+     background-color: greenyellow;
+}
+
+
+
+
+
+
+
+
+
+.display_letter{
+     margin: 28px 95px 0;
+     width: 132px;
+     height: 30px;
+     display: flex;
+     justify-content: flex-end;
+     gap: 0px 55px;
+     flex-direction: row-reverse;
+     align-items: flex-start;
+}
+.display_letter_right{
+     margin: -16px auto;
+     width: 54px;
+     height: 41px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-size: 22px;
+}
+.indicator_letter{
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+.buttons_letter {
+     margin: 12px 25px 0;
+     width: 157px;
+     height: 157px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 5px 5px;
+}
+.button_letter{
+     width: 76px;
+     height: 76px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     align-content: center;
+     flex-direction: column;
+     font-size: 22px;
+     gap: 10px;
+}
+.button_letter_indicator{
+     width: 17px;
+     height: 4px;
+     border-radius: 5.5px;
+     background-color: greenyellow;
+}
+
+
+
+
+
+
+.display_light_right{
+     margin: 10px auto;
+     width: 54px;
+     height: 41px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-size: 22px;
+}
+.buttons_light{
+     margin: 30px auto 0;
+     width: 233px;
+     height: 153px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2px 2px;
+}
+.button_light{
+     width: 76px;
+     height: 50px;
+     border-radius: 5.5px;
+     background-color: greenyellow;
+}
+
+
+
+.displays_math{
+     margin: 10px auto 0;
+     width: 217px;
+     height: 41px;
+     display: flex;
+     gap: 0px 12px;
+     font-size: 16px;
+
+}
+.display_math_left{
+     width: 71px;
+     height: 41px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+}
+.display_math_center{
+     width: 53px;
+     height: 41px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+}
+.indicator_math{
+     width: 70px;
+     height: 41px;
+     border-radius: 5.5px;
+     background-color: greenyellow;
+}
+
+
+
+.buttons_math{ 
+margin: 30px auto 0;
+width: 188px;
+height: 138px;
+display: flex;               
+flex-wrap: wrap;
+gap: 9px 9px;
+}
+.button_math{
+     width: 40px;
+     height: 40px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 22px;
+}
+
+
+
+
+
+
+
+.frame_memory{
+     margin: 10px auto 0;
+     width: 216px;
+     height: 205px;
+     display: flex;
+     gap: 0px 16px;
+}
+.left_memory{
+     margin-top: 48px;
+     width: 161px;
+     height: 170px;
+     display: flex;
+     gap: 21px 0;
+     flex-direction: column;
+}
+.display_memory{
+     width: 161px;
+     height: 98px;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-size: 42px;
+}
+.buttons_memory{
+     width: 161px;
+     height: 50px;
+     display: flex;
+     gap: 0 8px;
+     justify-content: space-between;
+     font-size: 22px;
+}
+.button_memory{
+     width: 33px;
+     height: 50px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+}
+.right_memory{
+     margin-top: 15px;
+     width: 40px;
+     height: 180px;
+     display: flex;
+     gap: 10px 0;
+     flex-direction: column;
+     align-items: center;
+}
+.indicator_memory{
+     width: 24px;
+     height: 24px;
+     border-radius: 100%;
+     background-color: greenyellow;
+}
+.indicators_memory{
+     width: 40px;
+     height: 155px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     display: flex;
+     gap: 11px 0px;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.indicator_memory_right{
+     width: 19px;
+     height: 12px;
+     border-radius: 5.5px;
+     background-color: greenyellow;
+}
+
+
+
+
+
+
+
+
+.display_tumblr{
+     width: 53px;
+     height: 41px;
+     margin: 10px auto;
+     display: flex;
+     border-radius: 5.5px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-size: 22px;
+}
+.buttons_tumblr{
+     width: 105px;
+     height: 105px;
+     margin: 10px auto;
+     border-radius: 100%;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.buttons_tumblr_arrow{
+     background:  url(../images/arrow.svg) no-repeat;
+     width: 60px;
+     height: 41px;
+     margin-right: -18px;
+}
+.indicators_tumblr{
+     margin: 10px auto 0;
+     width: 190px;
+     height: 109px;
+     display: flex;
+     gap: 0px 10px;
+     justify-content: center;
+}
+.indicators_tumblr_pair{
+     width: 22px;
+     height: 54px;
+     display: flex;
+     gap: 10px 0px;
+     flex-direction: column;
+}
+.indicator_tumblr{
+     width: 22px;
+     height: 22px;
+     border-radius: 100%;
+     background-color: greenyellow;
+}
+
+
+
+
+
+
+
+.display_logic{
+     margin: 28px 47px 0;
+     width: 180px;
+     height: 24px;
+     display: flex;
+     justify-content: flex-end;
+     gap: 0px 8px;
+     align-items: flex-start;
+}
+.indicator_logic {
+     border-radius: 100%;
+     background-color: greenyellow;
+     width: 24px;
+     height: 24px;
+}
+
+.buttons_logic{
+width: 220px;
+height: 108px;
+margin: 15px auto;
+display: flex;
+gap: 0 8px;
+flex-direction: column;
+}
+
+.buttons_logic_row{
+     width: 215px;
+     height: 64px;
+     display: flex;
+     gap: 0px 8px;
+     color: white;
+}
+.buttons_logic_column{
+     width: 35px;
+     height: 51px;
+     display: flex;
+     gap: 2px 0px;
+     flex-direction: column;
+     align-items: center;
+}
+.button_logic{
+     width: 35px;
+     height: 35px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.arrow_logic{
+     position: relative;
+     right: 18px;
+     top: 0px;
+     transform: rotate(90deg);
+}
+
+.indicator_logic_square{
+     border-radius: 5.5px;
+     background-color: greenyellow;
+     width: 27px;
+     height: 8px;
+}
+.button_logic_approve{
+     width: 71px;
+     height: 22px;
+     margin: 5px auto;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+
+.main_maze{
+     width: 145px;
+     height: 145px;
+     margin: 34px auto;
+     padding: 15px;
+     border-radius: 5.5px;
+     background-color: #8247FF;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 13px 12px;
+     flex-wrap: wrap;
+}
+.cube_maze{
+     width: 14px;
+     height: 14px;
+     border-radius: .5px;
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.serial_number{
+     width: 234px;
+     height: 48px;
+     background-color: #FF833D;
+     display: flex;
+     border-radius: 10px;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-size: 36px;
+     margin-bottom: 25px;
+}
+    
+}

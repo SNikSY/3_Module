@@ -1,0 +1,12 @@
+@import 'reset.css';
+@import '1920x1080.css';
+@import '1440x1024.css';
+@import '1280x720.css';
+@import '1024x768.css';
+@import '768x1024.css';
+@import '414x896.css';
+@import '360x640.css';
+@font-face {
+     font-family: VCR_OSD_MONO;
+     src: url(../fonts/VCR_OSD_MONO.ttf);
+}
