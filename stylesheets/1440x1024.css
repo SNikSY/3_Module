@@ -35,7 +35,7 @@
      
      /* Индикаторы разминирования */
      #one ,#two, #three, #four, #five, #six, #seven, #eight, #nine, #ten{
-          background-color: greenyellow;
+          background-color: #adff2f;
      }
      
      /* Контейнер головоломок */
@@ -63,9 +63,54 @@
           outline-offset: -3px;
      }
      
-
-
-
+     .container_hint {
+          margin-top: 41px;
+          min-width: 1233px;
+          max-width: 1251px;
+          height: 826px;
+          position: absolute;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2.0vw;
+          justify-content: flex-end;
+          align-content: flex-start;
+     }
+     .container_hint.two {
+          margin-top: 294px;
+     }
+     .container_hint.three {
+          margin-top: 294px;
+          margin-left: 15px;
+          gap: 2.23vw;
+          justify-content: flex-start;
+     }
+     .container_hint.four {
+          margin-top: 41px;
+          margin-left: 15px;
+          gap: 2.23vw;
+          justify-content: flex-start;
+     }
+     /* Основы головоломок */
+     .hint{
+          min-width: 467px;
+          min-height: 467px;
+          max-width: 477px;
+          max-height: 477px;
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          opacity: 0%;
+          background-color: #FF833D;
+          border-radius: 5px;
+          outline: 3px solid #8247FF;
+          outline-offset: -3px;
+     }
+     .transparent{
+          opacity: 1;
+     }
+     .opacity {
+          opacity: 0;
+     }
 
      /* Экран и индикатор первой головоломки */
      .display_anagram{
@@ -435,7 +480,7 @@
      }
      .indicator_lock {
           border-radius: 100%;
-          background-color: red;
+          background-color: #ff0000;
           width: 22px;
           height: 22px;
      }
@@ -552,7 +597,7 @@
      }
      .indicator_forget {
           border-radius: 100%;
-          background-color: greenyellow;
+          background-color: red;
           width: 22px;
           height: 22px;
      }
@@ -594,7 +639,7 @@
      }
      .indicator_keyboard {
           border-radius: 100%;
-          background-color: greenyellow;
+          background-color: red;
           width: 22px;
           height: 22px;
      }
@@ -624,7 +669,7 @@
           width: 16px;
           height: 3px;
           border-radius: 5px;
-          background-color: greenyellow;
+          background-color: gray;
      }
      
      

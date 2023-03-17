@@ -142,5 +142,82 @@ $(document).ready(function() {
 	randomColor();
 
 
+  $(document).ready(function() {
+    var currentDisplay = Math.floor(Math.random() * 10); // initialize random starting display value
+    var correctAnswers = [
+      Math.max(currentDisplay - 3, 1), // first answer is 3 digits smaller than current display, but not less than 0
+      Math.min(currentDisplay + 1, 9), // second answer is 1 digit bigger than current display
+      Math.min(currentDisplay + 7, 9) // third answer is 7 digits bigger than current display
+    ];
+    var currentShift = 0;
+    var enteredDigits = '';
+    $('.display_forget').text(currentDisplay);
+    $('.button_forget').click(function() {
+      var clickedButton = $(this).text();
+      $('.display_forget_right').text($('.display_forget_right').text() + clickedButton);
+      enteredDigits += clickedButton;
+      if (enteredDigits.length == 3) {
+        if (enteredDigits == correctAnswers.join('')) {
+          $('.indicator_forget').css('background-color', '#adff2f')
+          currentShift = 0;
+        } else {
+          alert('Sorry, incorrect answer. Please try again.');
+        }
+        enteredDigits = '';
+        currentDisplay = Math.floor(Math.random() * 10);
+        correctAnswers = [
+          Math.max(currentDisplay - 3, 0),
+          Math.min(currentDisplay + 1, 9), // second answer is 1 digit bigger than current display
+          Math.min(currentDisplay + 7, 9)
+        ];
+        $('.display_forget').text(currentDisplay);
+        $('.display_forget_right').text('');
+      }
+    });
+  });
+  
 
 
+  const correctOrderTwo = ['3', '1', '2','4'];
+  let progressTwo = 0;
+  let numIncorrectTwo = 0;
+
+  $('.button_keyboard').on('click', function() {
+    const $button = $(this);
+    const letter = $button.find('p').text();
+    const $indicator = $button.find('.button_keyboard_indicator');
+
+    if (letter === correctOrderTwo[progress]) {
+      $button.addClass('selected');
+      $indicator.css('background-color', '#adff2f')
+      progress++;
+
+      if (progress === correctOrderTwo.length) {
+        $('.indicator_keyboard').css('background-color', '#adff2f')
+      }
+    } else {
+      $button.addClass('selected');
+      $indicator.css('background-color', 'ff0000')
+      progressTwo = 0;
+      numIncorrectTwo++;
+
+      if (numIncorrectTwo === $('.button_keyboard').length) {
+        $('.indicator_keyboard, .button_keyboard_indicator').css('background-color', '555555')
+        $('.button_alphabet').removeClass('selected');
+        numIncorrectTwo = 0;
+      } else {
+        setTimeout(function() {
+          $button.removeClass('selected');
+          $indicator.css('background-color', '555555')
+        }, 500);
+      }
+    }
+  });
+
+
+ 
+ 
+
+
+
+ 
