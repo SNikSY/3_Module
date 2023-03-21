@@ -13,7 +13,32 @@
      .main {
           margin: auto;
      }
-     
+     .hi{
+          margin-left: 60px;
+          margin-right:50px ;
+          margin-top:35px;
+          line-height: 1.2em;
+     }
+     ol{
+          margin-left:60px;
+          margin-top: 35px;
+          margin-right: 50px;
+          list-style-type:decimal;
+     }
+     li{
+          margin-bottom: 1em;
+          line-height: 1.2em;
+     }
+     table{
+          margin: 90px;
+          width: 300px;
+          border-collapse: collapse;
+     }
+     td,th{
+          padding: 5px;
+          text-align: center;
+     }
+
      /* Верхние индикаторы */
      .container_top {
           margin: 29px auto 0;
@@ -65,9 +90,9 @@
      
      .container_hint {
           margin-top: 41px;
-          min-width: 1233px;
+          min-width: 1232px;
           max-width: 1251px;
-          height: 826px;
+          height: auto;
           position: absolute;
           display: flex;
           flex-wrap: wrap;
@@ -94,16 +119,21 @@
      .hint{
           min-width: 467px;
           min-height: 467px;
-          max-width: 477px;
-          max-height: 477px;
-          display: inline-block;
+          max-width: 466px;
+          max-height: 466px;
+          display: flex;
           vertical-align: top;
           position: relative;
           opacity: 0%;
-          background-color: #FF833D;
+          background-color: #8247FF;
           border-radius: 5px;
-          outline: 3px solid #8247FF;
-          outline-offset: -3px;
+          color: white;
+          font-family: 'Retron2000';
+          font-size: 12px;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: stretch;
+     
      }
      .transparent{
           opacity: 1;
@@ -704,7 +734,7 @@
      }
      .indicator_letter{
           border-radius: 100%;
-          background-color: greenyellow;
+          background-color: red;
           width: 22px;
           height: 22px;
      }
@@ -737,7 +767,7 @@
           width: 16px;
           height: 3px;
           border-radius: 5px;
-          background-color: greenyellow;
+          background-color: grey;
      }
      
      
@@ -769,7 +799,7 @@
           width: 69px;
           height: 45px;
           border-radius: 5px;
-          background-color: greenyellow;
+          background-color: black;
      }
      
      
@@ -807,7 +837,7 @@
           width: 64px;
           height: 37px;
           border-radius: 5px;
-          background-color: greenyellow;
+          background-color: red;
      }
      
      

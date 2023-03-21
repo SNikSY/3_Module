@@ -143,7 +143,7 @@ $(document).ready(function() {
 
 
   $(document).ready(function() {
-    var currentDisplay = Math.floor(Math.random() * 10); // initialize random starting display value
+    var currentDisplay = Math.floor(Math.random() * 9); // initialize random starting display value
     var correctAnswers = [
       Math.max(currentDisplay - 3, 1), // first answer is 3 digits smaller than current display, but not less than 0
       Math.min(currentDisplay + 1, 9), // second answer is 1 digit bigger than current display
@@ -215,9 +215,123 @@ $(document).ready(function() {
   });
 
 
- 
- 
 
 
 
- 
+  $(document).ready(function() {
+  var timer;
+  $(".button_light:first").one("click", function() {
+    var count = parseInt($(".display_light_right").text());
+    timer = setInterval(function() {
+      count--;
+      $(".display_light_right").text(count);
+      if (count == 0) {
+        clearInterval(timer);
+      }
+    }, 1000);
+  });
+
+  $(".button_light").click(function() {
+    $(this).css("background-color", "greenyellow");
+    if ($(".button_light:not(:has(style))").length == 0) {
+      clearInterval(timer);
+    } else if (!timer) {
+      timer = setInterval(function() {
+        var count = parseInt($(".display_light_right").text());
+        count--;
+        $(".display_light_right").text(count);
+        if (count == 0) {
+          clearInterval(timer);
+        }
+      }, 1000);
+    }
+  });
+});
+
+  
+
+
+
+
+
+
+
+// Define an array of numbers to use in the problems
+var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Define a function to generate a random problem
+function generateProblem() {
+  // Pick two random numbers from the array
+  var num1 = numbers[Math.floor(Math.random() * numbers.length)];
+  var num2 = numbers[Math.floor(Math.random() * numbers.length)];
+
+  // Make sure num1 is greater than num2
+  if (num1 < num2) {
+    var temp = num1;
+    num1 = num2;
+    num2 = temp;
+  }
+
+  // Build the problem string
+  var problem = num1 + " - " + num2;
+
+  // Return the problem string
+  return problem;
+}
+
+// Define a function to update the problem display
+function updateProblem() {
+  // Generate a new problem
+  var problem = generateProblem();
+
+  // Update the display
+  $(".display_math_left").text(problem);
+}
+
+// Call the updateProblem function to generate the first problem
+updateProblem();
+
+// Add a click handler to the equals button to check the answer
+$(".buttons_math .button_math:contains('=')").click(function() {
+  // Get the user's answer from the display
+  var userAnswer = $(".display_math_center").text();
+
+  // Calculate the correct answer
+  var problemParts = $(".display_math_left").text().split(" - ");
+  var correctAnswer = problemParts[0] - problemParts[1];
+
+  // Check the user's answer
+  if (userAnswer == correctAnswer) {
+    $(".indicator_math").css("background-color", "greenyellow");
+    $(".display_math_center").text(" ")
+  } else {
+    $(".indicator_math").css("background-color", "red");
+    $(".display_math_center").text(" ")
+  }
+
+  // Update the problem display with a new problem
+  updateProblem();
+});
+
+// Add a click handler to the number buttons to update the display
+$(".buttons_math .button_math:not(:contains('=')):not(:contains('-'))").click(function() {
+  // Get the clicked button's text
+  var buttonText = $(this).text();
+
+  // Get the current display text
+  var displayText = $(".display_math_center").text();
+
+  // Update the display with the clicked button's text
+  $(".display_math_center").text(displayText + buttonText);
+});
+
+// Add a click handler to the minus button to update the display
+$(".buttons_math .button_math:contains('-')").click(function() {
+  // Get the current display text
+  var displayText = $(".display_math_center").text();
+
+  // If the display is empty, add a minus sign
+  if (displayText == "") {
+    $(".display_math_center").text("-");
+  }
+});

@@ -5,9 +5,8 @@
      var indicator3 = $('.indicator_lock');
      var indicator4 = $('.indicator_keyboard');
      var indicator5 = $('.indicator_math');
-     var indicator6 = $('.indicator_chess');
      var indicator6 = $('.indicator_alphabet');
-     var indicator7 = $('.indicator_chess');
+     var indicator7 = $('.indicator_forget');
      var indicator8 = $('.indicator_color');
      var indicator9 = $('.indicator_logic');
    

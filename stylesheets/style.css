@@ -10,3 +10,9 @@
      font-family: VCR_OSD_MONO;
      src: url(../fonts/VCR_OSD_MONO.ttf);
 }
+@font-face {
+     font-family: Retron2000;
+     src: url(../fonts/Retron2000.ttf);
+}
+
+

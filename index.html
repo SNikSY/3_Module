@@ -34,23 +34,81 @@
 
 
           <div class="container_hint">
-               <div class="hint anagram"></div>
-               <div class="hint caesar"></div>
+               <div class="hint anagram">
+                   <p class="hi">На дисплее высвечивается слово. Переставьте буквы, чтобы образовать другое слово. Это должно сработать. Это точно должно сработать.</p>
+                    <ol>
+                         <li>Если на нескольких кнопках присутсвует одна и та же буква, не имеет значения, какую из них вы используете. Вы даже можете использовать одну и ту же кнопку несколько раз.</li>
+                         <li>Вы можете добавить на дисплей столько букв, сколько захотите.</li>
+                         <li>Вы все еще можете снова включить модуль если ввведёте неправильную комбинацию после верного решения</li>
+                    </ol>
+               </div>
+               <div class="hint caesar">
+                    <p class="hi">Модуль ШИФР ЦЕЗАРЯ требует, чтобы вы ввели пятибуквенное слово, сдвигая буквы на дисплее на определенное количество букв вперед или назад. Сдвиг определяется серийным номером реактора. Расшифруйте символы на дисплее с помощью шифра Цезаря. Здесь нет кнопки удаления, так что жмите осторожно!</p>
+                    <ol>
+                         <li>Количество символов сообщения чётное -1</li>
+                         <li>Последняя цифра серийного номера нечётная +1</li>
+                         <li>Последняя цифра серийного номера чётная -1</li>
+                         <li>Количество символов сообщения нечётное +1</li>
+                    </ol>
+               </div>
           </div>
           <div class="container_hint two">
                <div class="hint lock"></div>
-               <div class="hint keyboard"></div>
+               <div class="hint keyboard">
+                    
+               </div>
           </div>
           <div class="container_hint two">
                <div class="hint math"></div>
           </div>
           <div class="container_hint three">
-               <div class="hint alphabet"></div>
+               <div class="hint alphabet">
+                    <ol>
+                         <li>Используйте четыре кнопки с буквами, чтобы написать слово из приведенного ниже списка слов.</li>
+                         <li>Напишите самое длинное слово из заданных букв, нажав на кнопки с буквами.</li>
+                         <li>Буква может быть использована только один раз для написания слова.</li>
+                    </ol>
+                    <table>
+                         <tr>
+                             <td>JXQZ</td>
+                             <td>QEW</td>
+                             <td>AC</td>
+                             <td>ZNY</td>
+                             <td>TJL</td>
+                         </tr>
+                         <tr>
+                             <td>OKBV</td>
+                             <td>DFW</td>
+                             <td>YKQ</td>
+                             <td>LXE</td>
+                             <td>GS</td>
+                         </tr>
+                         <tr>
+                             <td>VSI</td>
+                             <td>PQJS</td>
+                             <td>VCN</td>
+                             <td>JR</td>
+                             <td>IRNM</td>
+                         </tr>
+                         <tr>
+                             <td>OP</td>
+                             <td>QYDX</td>
+                             <td>HDU</td>
+                             <td>PKD</td>
+                             <td>ARGF</td>
+                         </tr>
+                     </table>
+               </div>
                <div class="hint chess"></div>
           </div>
           <div class="container_hint four">
                <div class="hint logic"></div>
-               <div class="hint color"></div>
+               <div class="hint color">
+                    <p class="hi">Модуль цветной вспышки будет многократно выдавать последовательность из 8 различных слов, представляющих цвета в разных цветах. Возможные цвета: красный, желтый, зеленый, синий, фиолетовый и белый. На модуле также есть кнопки "Да" и "Нет".
+
+                         Для отключения модуля необходимо нажать только одну из кнопок "Да" и "Нет", но она должна быть нажата в нужное время в соответствии с приведенными ниже правилами.
+                         Цвет последнего слова в последовательности определяет, какому набору правил следовать ниже.</p>
+               </div>
           </div>
 
 
@@ -258,19 +316,19 @@
                     </div>
                    
                     <div class="buttons_keyboard">
-                         <div class="button_keyboard">
+                         <div class="button_keyboard" id="k1">
                               <div class="button_keyboard_indicator"></div>
                               <img src="images/frst_button.png" alt="">
                          </div>
-                         <div class="button_keyboard">
+                         <div class="button_keyboard id="k2"">
                               <div class="button_keyboard_indicator"></div>
                               <img src="images/scnd_button.png" alt="">
                          </div>
-                         <div class="button_keyboard">
+                         <div class="button_keyboard id="k3"">
                               <div class="button_keyboard_indicator"></div>
                               <img src="images/thrd_button.png" alt="">
                          </div>
-                         <div class="button_keyboard">
+                         <div class="button_keyboard id="k4"">
                               <div class="button_keyboard_indicator"></div>
                               <img src="images/frth_button.png" alt="">
                          </div>
@@ -352,7 +410,7 @@
 
 
                <div class="block light">
-                    <div class="display_light_right">43</div>
+                    <div class="display_light_right">3</div>
                     <div class="buttons_light">
                          <div class="button_light"></div>
                          <div class="button_light"></div>
@@ -428,8 +486,8 @@
 
                <div class="block math">
                     <div class="displays_math">
-                         <div class="display_math_left">45 - 38</div>
-                         <div class="display_math_center">7</div>
+                         <div class="display_math_left"></div>
+                         <div class="display_math_center"></div>
                          <div class="indicator_math"></div>
                     </div>
                     <div class="buttons_math">
