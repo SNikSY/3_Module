@@ -1,28 +1,18 @@
-@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
 
      body {
           margin: auto;
           padding: 0;
           background: #EAEAEA;
           font-family: 'VCR_OSD_MONO';
-          width: 1253px;
+          width: 87.014vw;
           user-select: none;
      }
      
-     /* Выранвивание по центру */
-     .main {
-          margin: auto;
-     }
-     .hi{
-          margin-left: 60px;
-          margin-right:50px ;
-          margin-top:35px;
-          line-height: 1.2em;
-     }
      ol{
-          margin-left:60px;
-          margin-top: 35px;
-          margin-right: 50px;
+          margin-left:4.167vw;
+          margin-top: 2.431vw;
+          margin-right: 3.472vw;
           list-style-type:decimal;
      }
      li{
@@ -30,44 +20,89 @@
           line-height: 1.2em;
      }
      table{
-          margin: 90px;
-          width: 300px;
+          margin: 6.250vw;
+          width: 20.833vw;
           border-collapse: collapse;
      }
      td,th{
-          padding: 5px;
+          padding: 0.347vw;
           text-align: center;
      }
-
+     .russian{
+          font-family: 'Retron2000';
+          font-size: 35px;
+     }
+     .start-screen{
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #fff;
+          z-index: 9999;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          overflow: hidden;
+     }
+     .start{
+          display: flex;
+          background-color: #FF833D;
+          border-radius: 15px;
+          color: white;
+          width: 300px;
+          height: 150px;
+          font-family: 'Retron2000';
+          font-size: 40px;
+          justify-content: center;
+          align-items: center;
+          transition: all .2s ease-in-out;
+     }
+     /* Выранвивание по центру */
+     .main {
+          margin: auto;
+     }
+     .hi{
+          margin-left: 4.167vw;
+          margin-right:3.472vw ;
+          margin-top:2.431vw;
+          line-height: 1.2em;
+     }
      /* Верхние индикаторы */
      .container_top {
-          margin: 29px auto 0;
+          margin: 2.014vw auto 0;
           width: auto;
-          height: 92px;
+          height: 6.389vw;
           display: flex;
           flex-wrap: nowrap;
           gap: 0 2.344vw;
           justify-content: center;
      }
      .square {
-          width: 92px;
-          height: 92px;
-          border-radius: 25px;
+          width: 6.389vw;
+          height: 6.389vw;
+          border-radius: 1.736vw;
           display: inline-block;
           vertical-align: top;
           position: relative;
      }
      
      /* Индикаторы разминирования */
-     #one ,#two, #three, #four, #five, #six, #seven, #eight, #nine, #ten{
+     #one ,#two{
           background-color: #adff2f;
+     }
+         
+     #three, #four, #five, #six, #seven, #eight, #nine, #ten{
+          background-color: red;
      }
      
      /* Контейнер головоломок */
      .container_main {
-          margin-top: 41px;
+          margin-top: 2.847vw;
           width: auto;
-          height: 826px;
+          height: 57.361vw;
           display: flex;
           flex-wrap: wrap;
           gap: 2.0vw;
@@ -77,21 +112,21 @@
      
      /* Основы головоломок */
      .block{
-          width: 219px;
-          height: 219px;
+          width: 15.208vw;
+          height: 15.208vw;
           display: inline-block;
           vertical-align: top;
           position: relative;
           background-color: #FF833D;
-          border-radius: 5px;
-          outline: 3px solid #8247FF;
-          outline-offset: -3px;
+          border-radius: 0.347vw;
+          outline: 0.278vw solid #8247FF;
+          outline-offset: -0.208vw;
      }
      
+     /* Контейнер подсказок */
      .container_hint {
-          margin-top: 41px;
-          min-width: 1232px;
-          max-width: 1251px;
+          margin-top: 2.847vw;
+          min-width: 85.556vw;
           height: auto;
           position: absolute;
           display: flex;
@@ -101,35 +136,35 @@
           align-content: flex-start;
      }
      .container_hint.two {
-          margin-top: 294px;
+          margin-top: 20.417vw;
      }
      .container_hint.three {
-          margin-top: 294px;
-          margin-left: 15px;
+          margin-top: 20.417vw;
+          margin-left: 1.042vw;
           gap: 2.23vw;
           justify-content: flex-start;
      }
      .container_hint.four {
-          margin-top: 41px;
-          margin-left: 15px;
+          margin-top: 2.847vw;
+          margin-left: 1.042vw;
           gap: 2.23vw;
           justify-content: flex-start;
      }
-     /* Основы головоломок */
+     /* Основы подсказок */
      .hint{
-          min-width: 467px;
-          min-height: 467px;
-          max-width: 466px;
-          max-height: 466px;
+          min-width: 32.431vw;
+          min-height: 32.431vw;
+          max-width: 32.361vw;
+          max-height: 32.361vw;
           display: flex;
           vertical-align: top;
           position: relative;
           opacity: 0%;
           background-color: #8247FF;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           color: white;
           font-family: 'Retron2000';
-          font-size: 12px;
+          font-size: 0.833vw;
           flex-wrap: wrap;
           justify-content: center;
           align-items: stretch;
@@ -142,75 +177,75 @@
           opacity: 0;
      }
 
-     /* Экран и индикатор первой головоломки */
+     /* Анаграмма */
      .display_anagram{
-          margin: 23px auto;
-          width: 190px;
-          height: 60px;
+          margin: 1.597vw auto;
+          width: 13.194vw;
+          height: 4.167vw;
           display: flex;
-          gap: 0 25px;
-          font-size: 16px;
+          gap: 0 1.736vw;
+          font-size: 1.111vw;
      }
      .indicator_anagram {
           border-radius: 100%;
           background-color: red;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      .indicator_anagram.correct {
           border-radius: 100%;
           background-color: greenyellow;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      .display_anagram_right {
-          width: 142px;
-          height: 60px;
+          width: 9.861vw;
+          height: 4.167vw;
           display: flex;
           flex-direction: column;
-          gap: 5px;
+          gap: 0.347vw;
      }
      .display_anagram_top{
-          width: 142px;
-          height: 26px;
+          width: 9.861vw;
+          height: 1.806vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
      }
      .display_anagram_bottom{
-          width: 142px;
-          height: 26px;
+          width: 9.861vw;
+          height: 1.806vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
      }
-     
-     /* Кнопки первой головоломки */
      .buttons_anagram {
-          margin: 28px auto;
-          width: 186px;
-          height: 89px;
+          margin: 1.944vw auto;
+          width: 12.917vw;
+          height: 6.181vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 8px 8px;
-          font-size: 20px;
+          gap: 0.556vw 0.556vw;
+          font-size: 1.389vw;
      }
      .button_anagram, .delete_anagram, .check_anagram {
-          width: 40px;
-          height: 40px;
-          border-radius: 5px;
+          width: 2.778vw;
+          height: 2.778vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
+          transition: all .2s ease-in-out;
      }
+    
      
      
 
@@ -218,119 +253,120 @@
 
      /* Алфавит */
      .display_alphabet{
-          margin: 23px auto 0;
-          width: 200px;
-          height: 22px;
+          margin: 1.597vw auto 0;
+          width: 13.889vw;
+          height: 1.528vw;
           display: flex;
           justify-content: flex-end;
-          gap: 0 25px;
+          gap: 0 1.736vw;
      }
      .indicator_alphabet {
           border-radius: 100%;
           background-color: red;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      .indicator_alphabet.lit-green {
           border-radius: 100%;
           background-color: greenyellow;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      .indicator_alphabet.lit-red {
           border-radius: 100%;
           background-color: red;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      .buttons_alphabet {
-          margin: 15px 23px;
-          width: 140px;
-          height: 140px;
+          margin: 1.042vw 1.597vw;
+          width: 9.722vw;
+          height: 9.722vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 6px 6px;
-          font-size: 20px;
-     }
-     
+          gap: 0.417vw 0.417vw;
+          font-size: 1.389vw;
+     }   
      .button_alphabet {
-          width: 66px;
-          height: 66px;
-          border-radius: 5px;
+          width: 4.583vw;
+          height: 4.583vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          gap: 10px;
+          gap: 0.694vw;
+          transition: all .2s ease-in-out;
      }
+     
      .button_alphabet_indicator{
-          width: 16px;
-          height: 3px;
-          margin-top: 5px;
-          border-radius: 5px;
+          width: 1.111vw;
+          height: 0.208vw;
+          margin-top: 0.347vw;
+          border-radius: 0.347vw;
           background-color: gray;
      }
      .button_alphabet_indicator.lit-green{
-          width: 16px;
-          height: 3px;
-          margin-top: 5px;
-          border-radius: 5px;
+          width: 1.111vw;
+          height: 0.208vw;
+          margin-top: 0.347vw;
+          border-radius: 0.347vw;
           background-color: greenyellow;
      }
      .button_alphabet_indicator.lit-red{
-          width: 16px;
-          height: 3px;
-          margin-top: 5px;
-          border-radius: 5px;
+          width: 1.111vw;
+          height: 0.208vw;
+          margin-top: 0.347vw;
+          border-radius: 0.347vw;
           background-color: red;
      }
      
      
      
+
+
      /* Шифр Цезаря */
      .display_caesar{
-          margin: 12px auto 0;
-          width: 192px;
-          height: 47px;
+          margin: 0.833vw auto 0;
+          width: auto;
+          height: 3.264vw;
           display: flex;
-          justify-content: flex-end;
-          gap: 0 21px;
+          justify-content: center;
+          gap: 0 1.458vw;
           flex-direction: row-reverse;
           align-items: center;
      }
      .indicator_caesar {
           border-radius: 100%;
           background-color: red;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      .display_caesar_right{
-          width: 148px;
-          height: 47px;
+          width: 10.453vw;
+          height: 3.264vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
      }
-     
-     
      .buttons_caesar {
-          margin: 15px auto;
-          width: 161px;
-          height: 120px;
+          margin: 1.042vw auto;
+          width: 11.181vw;
+          height: 8.333vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 7px 7px;
-          font-size: 18px;
+          gap: 0.486vw 0.486vw;
+          font-size: 1.250vw;
      }
      .button_caesar{
-          width: 34px;
-          height: 34px;
-          border-radius: 5px;
+          width: 2.361vw;
+          height: 2.361vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
@@ -338,18 +374,7 @@
           align-items: center;
           transition: all .2s ease-in-out;
      }
-     .button_caesar.clicked{
-          transform: scale(.9);
-          width: 34px;
-          height: 34px;
-          border-radius: 5px;
-          background-color: #743cec;
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: all .2s ease-in-out;
-     }
+     
      
      
      
@@ -357,132 +382,113 @@
      
      /* Шахматы */
      .display_chess{
-          margin: 23px auto 0;
-          width: 187px;
-          height: 76px;
+          margin: 1.597vw auto 0;
+          width: 12.986vw;
+          height: 5.278vw;
           display: flex;
           justify-content: flex-end;
-          gap: 0px 29px;
+          gap: 0px 2.014vw;
           flex-direction: row-reverse;
           align-items: flex-start;
      }
      .indicator_chess {
           border-radius: 100%;
           background-color: greenyellow;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      .display_chess_right{
-          width: 137px;
-          height: 63px;
+          width: 9.514vw;
+          height: 4.375vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
      }
-     
-     
-     
      .buttons_chess {
-          margin: 37px auto 0;
-          width: 193px;
-          height: 48px;
+          margin: 2.569vw auto 0;
+          width: 13.403vw;
+          height: 3.333vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 15px 15px;
-          font-size: 16px;
+          gap: 1.042vw 1.042vw;
+          font-size: 1.111vw;
      }
      .button_chess{
-          width: 19px;
-          height: 19px;
-          border-radius: 5px;
+          width: 1.319vw;
+          height: 1.319vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
-     }
-     
-     
-     
+          transition: all .2s ease-in-out;
+     }    
+
      .indicators_chess{
-          margin: 16px auto;
-          width: 181px;
-          height: 6px;
+          margin: 1.111vw auto;
+          width: 12.769vw;
+          height: 0.417vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 0 29px;
+          gap: 0 2.014vw;
      }
      .indicator_small_chess{
           border-radius: 100%;
           background-color: greenyellow;
-          width: 6px;
-          height: 6px;
+          width: 0.417vw;
+          height: 0.417vw;
      }
      
      
      
 
-     /* Color */
 
+
+     /* Цвета */
      .display_color{
-          margin: 23px 28px 0;
-          width: 176px;
-          height: 57px;
+          margin: 1.597vw 1.944vw 0;
+          width: 12.222vw;
+          height: 3.958vw;
           display: flex;
           justify-content: flex-end;
-          gap: 0px 34px;
+          gap: 0px 2.361vw;
           flex-direction: row-reverse;
           align-items: flex-start;
      }
      .indicator_color {
           border-radius: 100%;
           background-color: red;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      .display_color_right{
-          width: 121px;
-          height: 52px;
+          width: 8.403vw;
+          height: 3.611vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: red;
           justify-content: center;
           align-items: center;
-          font-size: 16px;
+          font-size: 1.111vw;
      }
-     
-     
      .buttons_color {
-          margin: 10px auto 0;
-          width: 201px;
-          height: 98px;
+          margin: 0.694vw auto 0;
+          width: 13.958vw;
+          height: 6.806vw;
           display: flex;
           flex-wrap: nowrap;
-          gap: 0px 5px;
-          font-size: 20px;
+          gap: 0px 0.347vw;
+          font-size: 1.389vw;
      }
      .button_color{
-          width: 98px;
-          height: 98px;
-          border-radius: 5px;
-          background-color: #8247FF;
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: all .2s ease-in-out;
-     }
-     
-     }
-     .button_color.clicked{
-          transform: scale(.9);
-          width: 98px;
-          height: 98px;
-          border-radius: 5px;
+          width: 6.806vw;
+          height: 6.806vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
@@ -492,32 +498,31 @@
      }
      
      
+     
 
 
 
-
-     /* Lock */
-
+      /* Замок */
      .display_lock{
-          margin: 28px 42px 0;
-          width: 162px;
-          height: 133px;
+          margin: 1.944vw 2.917vw 0;
+          width: 11.250vw;
+          height: 9.236vw;
           display: flex;
           justify-content: flex-end;
-          gap: 0px 7px;
+          gap: 0px 0.486vw;
           flex-direction: row-reverse;
           align-items: flex-start;
      }
      .indicator_lock {
           border-radius: 100%;
-          background-color: #ff0000;
-          width: 22px;
-          height: 22px;
+          background-color: greenyellow;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      
      .display_lock_right{
-          width: 133px;
-          height: 133px;
+          width: 9.236vw;
+          height: 9.236vw;
           display: flex;
           border-radius: 100%;
           background-color: #8247FF;
@@ -525,8 +530,8 @@
           align-items: center;
      }
      .display_lock_right_center{
-          width: 72px;
-          height: 72px;
+          width: 5vw;
+          height: 5vw;
           display: flex;
           border-radius: 100%;
           background-color: black;
@@ -535,90 +540,90 @@
           align-items: center;
           font-size: 38px;
      }
-     
-     
-     
-     
      .buttons_lock {
-          margin: 12px auto 0;
-          width: 198px;
-          height: 32px;
+          margin: 0.833vw auto 0;
+          width: 13.750vw;
+          height: 2.222vw;
           display: flex;
           flex-wrap: nowrap;
-          gap: 0px 42px;
+          gap: 0px 2.917vw;
      }
      
      .buttons_lock_left {
           margin: 0px auto 0px;
-          width: 73px;
-          height: 32px;
+          width: 5.069vw;
+          height: 2.222vw;
           display: flex;
           flex-wrap: nowrap;
-          gap: 0px 9px;
-          font-size: 32px;
+          gap: 0px 0.625vw;
+          font-size: 2.222vw;
      }
      .button_lock{
-          width: 32px;
-          height: 32px;
-          border-radius: 5px;
+          width: 2.222vw;
+          height: 2.222vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
+          transition: all .2s ease-in-out;
+     }
+     .clicked{
+          transition: all .2s ease-in-out;
+          transform: scale(.9);
      }
      .button_lock_right{
-          width: 83px;
-          height: 32px;
-          border-radius: 5px;
+          width: 5.764vw;
+          height: 2.222vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 16px;
+          font-size: 1.111vw;
+          transition: all .2s ease-in-out;
      }
      
      
      
-
-
 
 
      /* Незабудка */
-
      .buttons_forget{
-          margin: 28px auto 0;
-          width: 200px;
-          height: 125px;
+          margin: 1.944vw auto 0;
+          width: 13.889vw;
+          height: 8.681vw;
           display: flex;
           flex-wrap: nowrap;
           gap: 0px 0;
-          font-size: 20px;
+          font-size: 1.389vw;
      }
      .buttons_forget_line{
-          margin: -20px auto 0;
-          width: 182px;
-          height: 138px;
+          margin: -1.389vw auto 0;
+          width: 12.639vw;
+          height: 9.583vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 6px 6px;
+          gap: 0.417vw 0.417vw;
           align-items: flex-end;
      }
      .button_forget{
-          width: 41px;
-          height: 41px;
-          border-radius: 5px;
+          width: 2.847vw;
+          height: 2.847vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
+          transition: all .2s ease-in-out;
      }
      .display_forget {
-          width: 36px;
-          height: 36px;
-          border-radius: 5px;
+          width: 2.500vw;
+          height: 2.500vw;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           display: flex;
@@ -628,64 +633,55 @@
      .indicator_forget {
           border-radius: 100%;
           background-color: red;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
-     
-     
-     
-     
      .display_forget_right{
           margin: auto;
-          width: 204px;
-          height: 58px;
+          width: 14.167vw;
+          height: 4.028vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
-          font-size: 42px;
+          font-size: 2.917vw;
      }
      
      
      
      
 
-
-
-
-
-
-
+     /* Клавиатура */
      .display_keyboard{
-          margin: 28px auto 0;
-          width: 185px;
-          height: 22px;
+          margin: 1.944vw auto 0;
+          width: 12.847vw;
+          height: 1.528vw;
           display: flex;
           justify-content: flex-end;
-          gap: 0px 8px;
+          gap: 0px 0.556vw;
           align-items: flex-start;
      }
      .indicator_keyboard {
           border-radius: 100%;
-          background-color: red;
-          width: 22px;
-          height: 22px;
+          background-color: greenyellow;
+          width: 1.528vw;
+          height: 1.528vw;
      }
      
      .buttons_keyboard {
-          margin: 12px 25px 0;
-          width: 142px;
-          height: 142px;
+          margin: 0.833vw 1.736vw 0;
+          width: 9.861vw;
+          height: 9.861vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 4px 4px;
+          gap: 0.278vw 0.278vw;
      }
      .button_keyboard{
-          width: 68px;
-          height: 68px;
-          border-radius: 5px;
+          width: 4.722vw;
+          height: 4.722vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
@@ -694,64 +690,59 @@
           flex-wrap: wrap;
           align-content: center;
           flex-direction: column;
+          transition: all .2s ease-in-out;
      }
      .button_keyboard_indicator{
-          width: 16px;
-          height: 3px;
-          border-radius: 5px;
+          width: 1.111vw;
+          height: 0.208vw;
+          border-radius: 0.347vw;
           background-color: gray;
      }
      
      
      
      
-     
-     
-     
-     
-     
+     /* Заглушка */
      .display_letter{
-          margin: 28px 87px 0;
-          width: 120px;
-          height: 39px;
+          margin: 1.944vw 87px 0;
+          width: 8.333vw;
+          height: 2.708vw;
           display: flex;
           justify-content: flex-end;
-          gap: 0px 50px;
+          gap: 0px 3.472vw;
           flex-direction: row-reverse;
           align-items: flex-start;
      }
      .display_letter_right{
-          margin: -16px auto;
-          width: 48px;
-          height: 37px;
+          margin: -1.111vw auto;
+          width: 3.333vw;
+          height: 2.569vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
-          font-size: 20px;
+          font-size: 1.389vw;
      }
      .indicator_letter{
           border-radius: 100%;
-          background-color: red;
-          width: 22px;
-          height: 22px;
+          background-color: greenyellow;
+          width: 1.528vw;
+          height: 1.528vw;
      }
-
-
      .buttons_letter {
           margin: auto;
-          width: 140px;
-          height: 120px;
+          width: 9.722vw;
+          height: 8.333vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 5px 5px;
+          gap: 0.347vw 0.347vw;
      }
      .button_letter{
-          width: 66px;
-          height: 66px;
-          border-radius: 5px;
+          width: 4.583vw;
+          height: 4.583vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
@@ -760,106 +751,107 @@
           flex-wrap: wrap;
           align-content: center;
           flex-direction: column;
-          font-size: 20px;
-          gap: 10px;
+          font-size: 1.389vw;
+          gap: 0.694vw;
+          transition: all .2s ease-in-out;
      }
      .button_letter_indicator{
-          width: 16px;
-          height: 3px;
-          border-radius: 5px;
+          width: 1.111vw;
+          height: 0.208vw;
+          border-radius: 0.347vw;
           background-color: grey;
      }
      
      
      
      
-     
-     
+     /* Подсветка */
      .display_light_right{
-          margin: 10px auto;
-          width: 48px;
-          height: 37px;
+          margin: 0.694vw auto;
+          width: 3.333vw;
+          height: 2.569vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
-          font-size: 20px;
+          font-size: 1.389vw;
      }
      .buttons_light{
-          margin: 29px auto 0;
-          width: 211px;
-          height: 139px;
+          margin: 2.014vw auto 0;
+          width: 14.8vw;
+          height: 9.653vw;
           display: flex;
           flex-wrap: wrap;
-          gap: 2px 2px;
+          gap: 0.139vw 0.139vw;
      }
      .button_light{
-          width: 69px;
-          height: 45px;
-          border-radius: 5px;
+          width: 4.792vw;
+          height: 3.125vw;
+          border-radius: 0.347vw;
           background-color: black;
+          transition: all .2s ease-in-out;
      }
      
      
      
+
+     /* Математика */
      .displays_math{
-          margin: 10px auto 0;
-          width: 197px;
-          height: 37px;
+          margin: 0.694vw auto 0;
+          width: 13.681vw;
+          height: 2.569vw;
           display: flex;
-          gap: 0px 12px;
-          font-size: 14px;
+          gap: 0px 0.833vw;
+          font-size: 0.972vw;
      
      }
      .display_math_left{
-          width: 64px;
-          height: 37px;
+          width: 4.444vw;
+          height: 2.569vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
      }
      .display_math_center{
-          width: 48px;
-          height: 37px;
+          width: 3.333vw;
+          height: 2.569vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
      }
      .indicator_math{
-          width: 64px;
-          height: 37px;
-          border-radius: 5px;
+          width: 4.444vw;
+          height: 2.569vw;
+          border-radius: 0.347vw;
           background-color: red;
      }
-     
-     
-     
      .buttons_math{ 
-     margin: 30px auto 0;
-     width: 171px;
-     height: 121px;
+     margin: 2.083vw auto 0;
+     width: 11.875vw;
+     height: 8.403vw;
      display: flex;               
      flex-wrap: wrap;
-     gap: 9px 9px;
+     gap: 0.625vw 0.625vw;
      }
      .button_math{
-          width: 36px;
-          height: 36px;
-          border-radius: 5px;
+          width: 2.500vw;
+          height: 2.500vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 20px;
+          font-size: 1.389vw;
+          transition: all .2s ease-in-out;
      }
      
      
@@ -867,82 +859,95 @@
      
      
      
-     
+     /* Memory */
      .frame_memory{
-          margin: 10px auto 0;
-          width: 196px;
-          height: 169px;
+          margin: 0.694vw auto 0;
+          width: 13.611vw;
+          height: 11.736vw;
           display: flex;
-          gap: 0px 16px;
+          gap: 0px 1.111vw;
      }
      .left_memory{
-          margin-top: 48px;
-          width: 146px;
-          height: 139px;
+          margin-top: 3.333vw;
+          width: 10.139vw;
+          height: 9.653vw;
           display: flex;
-          gap: 21px 0;
+          gap: 1.458vw 0;
           flex-direction: column;
      }
      .display_memory{
-          width: 146px;
-          height: 88px;
+          width: 10.139vw;
+          height: 6.111vw;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
-          font-size: 42px;
+          font-size: 2.917vw;
      }
      .buttons_memory{
-          width: 146px;
-          height: 47px;
+          width: 10.139vw;
+          height: 3.264vw;
           display: flex;
-          gap: 0 8px;
+          gap: 0 0.556vw;
           justify-content: space-between;
-          font-size: 20px;
+          font-size: 1.389vw;
      }
      .button_memory{
-          width: 30px;
-          height: 47px;
-          border-radius: 5px;
+          width: 2.083vw;
+          height: 3.264vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
           align-content: center;
+          transition: all .2s ease-in-out;
      }
      .right_memory{
-          margin-top: 15px;
-          width: 35px;
-          height: 170px;
+          margin-top: 1.042vw;
+          width: 2.431vw;
+          height: 11.806vw;
           display: flex;
-          gap: 10px 0;
+          gap: 0.694vw 0;
           flex-direction: column;
           align-items: center;
      }
      .indicator_memory{
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
+          border-radius: 100%;
+          background-color: red;
+     }
+     .indicator_memory.lit{
+          width: 1.528vw;
+          height: 1.528vw;
           border-radius: 100%;
           background-color: greenyellow;
      }
      .indicators_memory{
-          width: 35px;
-          height: 139px;
-          border-radius: 5px;
+          width: 2.431vw;
+          height: 9.653vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           display: flex;
-          gap: 11px 0px;
+          gap: 0.764vw 0px;
           flex-direction: column;
           align-items: center;
           justify-content: center;
      }
      .indicator_memory_right{
-          width: 17px;
-          height: 11px;
-          border-radius: 5px;
+          width: 1.181vw;
+          height: 0.764vw;
+          border-radius: 0.347vw;
+          background-color: red;
+     }
+     .indicator_memory_right.lit{
+          width: 1.181vw;
+          height: 0.764vw;
+          border-radius: 0.347vw;
           background-color: greenyellow;
      }
      
@@ -950,25 +955,23 @@
      
      
      
-     
-     
-     
+     /* Тумблер */
      .display_tumblr{
-          width: 48px;
-          height: 37px;
-          margin: 10px auto;
+          width: 3.333vw;
+          height: 2.569vw;
+          margin: 0.694vw auto;
           display: flex;
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: black;
           color: white;
           justify-content: center;
           align-items: center;
-          font-size: 20px;
+          font-size: 1.389vw;
      }
      .buttons_tumblr{
-          width: 98px;
-          height: 98px;
-          margin: 10px auto;
+          width: 6.806vw;
+          height: 6.806vw;
+          margin: 0.694vw auto;
           border-radius: 100%;
           background-color: #8247FF;
           color: white;
@@ -979,28 +982,28 @@
      .buttons_tumblr_arrow{
           background:  url(../images/arrow.svg) no-repeat;
           background-size: contain;
-          width: 53px;
-          height: 35px;
-          margin-right: -18px;
+          width: 3.681vw;
+          height: 2.431vw;
+          margin-right: -1.250vw;
      }
      .indicators_tumblr{
-          margin: -3px auto 0;
-          width: 173px;
-          height: 99px;
+          margin: -0.208vw auto 0;
+          width: 12.014vw;
+          height: 6.875vw;
           display: flex;
-          gap: 0px 10px;
+          gap: 0px 0.694vw;
           justify-content: center;
      }
      .indicators_tumblr_pair{
-          width: 20px;
-          height: 49px;
+          width: 1.389vw;
+          height: 3.403vw;
           display: flex;
-          gap: 10px 0px;
+          gap: 0.694vw 0px;
           flex-direction: column;
      }
      .indicator_tumblr{
-          width: 20px;
-          height: 20px;
+          width: 1.389vw;
+          height: 1.389vw;
           border-radius: 100%;
           background-color: greenyellow;
      }
@@ -1008,122 +1011,136 @@
      
      
      
-     
-     
-     
+     /* Логика */
      .display_logic{
-          margin: 28px 27px 0;
-          width: 180px;
-          height: 22px;
+          margin: 1.944vw 1.875vw 0;
+          width: 12.500vw;
+          height: 1.528vw;
           display: flex;
           justify-content: flex-end;
-          gap: 0px 8px;
+          gap: 0px 0.556vw;
           align-items: flex-start;
      }
      .indicator_logic {
           border-radius: 100%;
           background-color: greenyellow;
-          width: 22px;
-          height: 22px;
+          width: 1.528vw;
+          height: 1.528vw;
      }
-     
      .buttons_logic{
-     width: 191px;
-     height: 109px;
-     margin: 15px auto;
+     width: 13.264vw;
+     height: 7.569vw;
+     margin: 1.042vw auto;
      display: flex;
-     gap: 0 8px;
+     gap: 0 0.556vw;
      flex-direction: column;
      }
-     
      .buttons_logic_row{
-          width: 191px;
-          height: 46px;
+          width: 13.264vw;
+          height: 3.194vw;
           display: flex;
-          gap: 0px 8px;
+          gap: 0px 0.556vw;
           color: white;
      }
      .buttons_logic_column{
-          width: 32px;
-          height: 47px;
+          width: 2.222vw;
+          height: 3.264vw;
           display: flex;
-          gap: 2px 0px;
+          gap: 0.139vw 0px;
           flex-direction: column;
           align-items: center;
      }
      .button_logic{
-          width: 32px;
-          height: 32px;
-          border-radius: 5px;
+          width: 2.222vw;
+          height: 2.222vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
+          transition: all .2s ease-in-out;
      }
      .arrow_logic{
           position: relative;
-          right: 18px;
+          right: 1.250vw;
           top: 0px;
           transform: rotate(90deg);
      }
-     
      .indicator_logic_square{
-          border-radius: 5px;
+          border-radius: 0.347vw;
           background-color: greenyellow;
-          width: 25px;
-          height: 6px;
+          width: 1.736vw;
+          height: 0.417vw;
      }
      .button_logic_approve{
-          width: 67px;
-          height: 20px;
-          margin: 5px auto;
-          border-radius: 5px;
+          width: 4.653vw;
+          height: 1.389vw;
+          margin: 0.347vw auto;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 14px;
+          font-size: 0.972vw;
+          transition: all .2s ease-in-out;
      }
      
      
      
-     
+
+     /* Лабиринт */
      .main_maze{
-          width: 145px;
-          height: 145px;
-          margin: 23px auto;
-          padding: 15px;
-          border-radius: 5px;
+          width: 10.069vw;
+          height: 10.069vw;
+          margin: 1.597vw auto;
+          padding: 1.042vw;
+          border-radius: 0.347vw;
           background-color: #8247FF;
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 13px 12px;
+          gap: 0.903vw 0.833vw;
           flex-wrap: wrap;
      }
      .cube_maze{
-          width: 14px;
-          height: 14px;
-          border-radius: .5px;
+          width: 0.972vw;
+          height: 0.972vw;
+          border-radius: .0.347vw;
           background-color: white;
           display: flex;
           justify-content: center;
           align-items: center;
      }
      .serial_number{
-          width: 234px;
-          height: 48px;
+          width: 71.389vw;
+          height: 4.306vw;
           background-color: #FF833D;
           display: flex;
-          border-radius: 10px;
+          gap: 18.056vw;
+          border-radius: 0.694vw;
           color: white;
           justify-content: center;
           align-items: center;
-          font-size: 36px;
-          margin-bottom: 25px;
+          font-size: 2.500vw;
+          margin-bottom: 1.736vw;
      }
-         
-     
+     .final-screen{
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #fff;
+          z-index: -1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          overflow: hidden;
+     }
+
+}

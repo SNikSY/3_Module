@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1920px){
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
 
      body {
           margin: auto;
@@ -28,9 +28,15 @@
           padding: 0.347vw;
           text-align: center;
      }
+     img{
+          width: 2.246vw;
+     }
      .russian{
           font-family: 'Retron2000';
-          font-size: 35px;
+          font-size: 2.118vw;
+     }
+     .logo{
+          width: 4.883vw;
      }
      .start-screen{
           position: fixed;
@@ -55,7 +61,7 @@
           width: 300px;
           height: 150px;
           font-family: 'Retron2000';
-          font-size: 40px;
+          font-size: 3.906vw;
           justify-content: center;
           align-items: center;
           transition: all .2s ease-in-out;
@@ -538,7 +544,7 @@
           color: white;
           justify-content: center;
           align-items: center;
-          font-size: 38px;
+          font-size: 3.711vw;
      }
      .buttons_lock {
           margin: 0.833vw auto 0;
@@ -704,7 +710,7 @@
      
      /* Заглушка */
      .display_letter{
-          margin: 1.944vw 87px 0;
+          margin: 1.944vw 5.859vw 0;
           width: 8.333vw;
           height: 2.708vw;
           display: flex;
@@ -1063,8 +1069,9 @@
      }
      .arrow_logic{
           position: relative;
-          right: 1.250vw;
           top: 0px;
+          right: 1.05vw;
+          font-size: 10px;
           transform: rotate(90deg);
      }
      .indicator_logic_square{
