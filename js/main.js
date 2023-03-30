@@ -199,6 +199,7 @@ $(document).ready(function() {
         count--;
         $(".display_light_right").text(count);
         if (count == 0) {
+          $("#eight").css("background-color", "greenyellow")
           clearInterval(timer);
         }
       }, 1000);

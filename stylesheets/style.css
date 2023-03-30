@@ -3,7 +3,6 @@
 @import '1440x1024.css';
 @import '768x1024.css';
 @import '320x768.css';
-
 @font-face {
      font-family: VCR_OSD_MONO;
      src: url(../fonts/VCR_OSD_MONO.ttf);
