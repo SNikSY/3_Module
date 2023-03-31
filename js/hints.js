@@ -2,15 +2,11 @@
     
   if(window.innerWidth > 768) {
    
-     var indicator = $(".indicator_anagram");
-     var indicator2 = $('.indicator_caesar');
-     var indicator3 = $('.indicator_lock');
-     var indicator4 = $('.indicator_keyboard');
-     var indicator5 = $('.indicator_math');
-     var indicator6 = $('.indicator_alphabet');
-     var indicator7 = $('.indicator_forget');
-     var indicator8 = $('.indicator_color');
-     var indicator9 = $('.indicator_logic');
+     let indicator = $(".indicator_anagram");
+     let indicator2 = $('.indicator_caesar');
+     let indicator6 = $('.indicator_alphabet');
+     let indicator7 = $('.indicator_forget');
+     let indicator8 = $('.indicator_color');
    
      indicator.click(() => {
         
@@ -73,15 +69,12 @@
     }
     else if(window.innerWidth < 768){
 
-      var indicator = $(".indicator_anagram");
-      var indicator2 = $('.indicator_caesar');
-      var indicator3 = $('.indicator_lock');
-      var indicator4 = $('.indicator_keyboard');
-      var indicator5 = $('.indicator_math');
-      var indicator6 = $('.indicator_alphabet');
-      var indicator7 = $('.indicator_forget');
-      var indicator8 = $('.indicator_color');
-      var indicator9 = $('.indicator_logic');
+      let indicator = $(".indicator_anagram");
+      let indicator2 = $('.indicator_caesar');
+      let indicator6 = $('.indicator_alphabet');
+      let indicator7 = $('.indicator_forget');
+      let indicator8 = $('.indicator_color');
+      
     
       indicator.click(() => {
     

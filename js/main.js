@@ -88,11 +88,11 @@ $(document).ready(function() {
   });
 
 
-  var expectedOrder = "YJKZE";
-     var currentIndex = 0;
+  let expectedOrder = "YJKZE";
+     let currentIndex = 0;
    
      $(".button_caesar").click(function() {
-       var buttonLetter = $(this).text();
+       let buttonLetter = $(this).text();
 
        $(this).addClass("clicked");
        setTimeout(() => $(this).removeClass("clicked"),200);
@@ -158,19 +158,19 @@ $(document).ready(function() {
      
 
 
-  var currentDisplay = Math.floor(Math.random() * 9); 
-    var correctAnswers = [
+  let currentDisplay = Math.floor(Math.random() * 9); 
+    let correctAnswers = [
       Math.max(currentDisplay - 3, 1), 
       Math.min(currentDisplay + 1, 9), 
       Math.min(currentDisplay + 7, 9) 
     ];
-    var currentShift = 0;
-    var enteredDigits = '';
+    let currentShift = 0;
+    let enteredDigits = '';
     $('.display_forget').text(currentDisplay);
     $('.button_forget').click(function() {
       $(this).addClass("clicked");
       setTimeout(() => $(this).removeClass("clicked"),200);
-      var clickedButton = $(this).text();
+      let clickedButton = $(this).text();
       $('.display_forget_right').text($('.display_forget_right').text() + clickedButton);
       enteredDigits += clickedButton;
       if (enteredDigits.length == 3) {
@@ -192,9 +192,9 @@ $(document).ready(function() {
     });
 
 
-    var timer;
+    let timer;
     $(".button_light:first").one("click", function() {
-      var count = parseInt($(".display_light_right").text());
+      let count = parseInt($(".display_light_right").text());
       timer = setInterval(function() {
         count--;
         $(".display_light_right").text(count);
@@ -211,7 +211,7 @@ $(document).ready(function() {
         clearInterval(timer);
       } else if (!timer) {
         timer = setInterval(function() {
-          var count = parseInt($(".display_light_right").text());
+          let count = parseInt($(".display_light_right").text());
           $(".display_light_right").text(count);
           if (count == 0) {
             clearInterval(timer);
@@ -228,23 +228,23 @@ $(document).ready(function() {
 
 
     
-  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   
   function generateProblem() {
     
-    var num1 = numbers[Math.floor(Math.random() * numbers.length)];
-    var num2 = numbers[Math.floor(Math.random() * numbers.length)];
+    let num1 = numbers[Math.floor(Math.random() * numbers.length)];
+    let num2 = numbers[Math.floor(Math.random() * numbers.length)];
 
     
     if (num1 < num2) {
-      var temp = num1;
+      let temp = num1;
       num1 = num2;
       num2 = temp;
     }
 
     
-    var problem = num1 + " - " + num2;
+    let problem = num1 + " - " + num2;
 
     
     return problem;
@@ -252,7 +252,7 @@ $(document).ready(function() {
 
   
   function updateProblem() {
-    var problem = generateProblem();
+    let problem = generateProblem();
 
     
     $(".display_math_left").text(problem);
@@ -264,11 +264,11 @@ $(document).ready(function() {
   
   $(".buttons_math .button_math:contains('=')").click(function() {
    
-    var userAnswer = $(".display_math_center").text();
+    let userAnswer = $(".display_math_center").text();
 
    
-    var problemParts = $(".display_math_left").text().split(" - ");
-    var correctAnswer = problemParts[0] - problemParts[1];
+    let problemParts = $(".display_math_left").text().split(" - ");
+    let correctAnswer = problemParts[0] - problemParts[1];
 
    
     if (userAnswer == correctAnswer) {
@@ -287,10 +287,10 @@ $(document).ready(function() {
   
   $(".buttons_math .button_math:not(:contains('=')):not(:contains('-'))").click(function() {
    
-    var buttonText = $(this).text();
+    let buttonText = $(this).text();
 
    
-    var displayText = $(".display_math_center").text();
+    let displayText = $(".display_math_center").text();
 
    
     $(".display_math_center").text(displayText + buttonText);
@@ -299,7 +299,7 @@ $(document).ready(function() {
   
   $(".buttons_math .button_math:contains('-')").click(function() {
     
-    var displayText = $(".display_math_center").text();
+    let displayText = $(".display_math_center").text();
 
   
     if (displayText == "") {
@@ -314,9 +314,9 @@ $(document).ready(function() {
 
 
 
-var numDisplayed;
-  var buttonToPress;
-  var numCorrect = 0;
+let numDisplayed;
+  let buttonToPress;
+  let numCorrect = 0;
 
   function generateNumber() {
     numDisplayed = Math.floor(Math.random() * 4) + 1;
@@ -335,7 +335,7 @@ var numDisplayed;
   }
   
   function updateIndicators() {
-    var indicatorToLight = $('.indicator_memory_right:not(.lit)').first();
+    let indicatorToLight = $('.indicator_memory_right:not(.lit)').first();
     if (indicatorToLight.length > 0) {
       indicatorToLight.addClass('lit');
      

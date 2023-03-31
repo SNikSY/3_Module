@@ -1119,28 +1119,12 @@
           height: 4.306vw;
           background-color: #FF833D;
           display: flex;
-          gap: 18.056vw;
           border-radius: 0.694vw;
           color: white;
-          justify-content: center;
+          justify-content: space-around;
           align-items: center;
           font-size: 2.500vw;
           margin-bottom: 1.736vw;
-     }
-     .final-screen{
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: #fff;
-          z-index: -1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          overflow: hidden;
      }
 
 }
